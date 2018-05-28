@@ -22,7 +22,7 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String accountname = req.getParameter("accountname");
+    	String accountname = req.getParameter("accountname");
         String password = req.getParameter("password");
         int login = employeeService.login(accountname, password);
         ServletContext sc = req.getServletContext();

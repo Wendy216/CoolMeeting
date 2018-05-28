@@ -8,7 +8,8 @@ import java.sql.*;
 public class DBUtils {
     public static Connection getConnection() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.jdbc.Driver");
-        return DriverManager.getConnection("jdbc:mysql:///meeting", "root", "123");
+        return DriverManager.getConnection("jdbc:mysql://localhost/meeting", "root", "111111");
+        //return DriverManager.getConnection("jdbc:mysql:///meeting", "root", "123");
     }
 
     public static void close(Connection connection) {
